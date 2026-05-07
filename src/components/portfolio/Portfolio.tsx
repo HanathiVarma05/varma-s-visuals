@@ -300,42 +300,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section id="testimonials" className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 text-xs uppercase tracking-[0.25em] text-primary">Testimonials</p>
-          <h2 className="font-display text-4xl leading-tight sm:text-5xl">
-            Trusted by creators who care about results
-          </h2>
-          <p className="mt-4 text-muted-foreground">
-            Real words from real creators I've helped grow their audience and engagement.
-          </p>
-        </div>
-        <div className="mx-auto mt-12 max-w-xl">
-          <Slideshow
-            aspect="square"
-            label="Testimonials"
-            slides={testimonials.map((t, i) => (
-              <div
-                key={i}
-                className="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8 text-center sm:p-12"
-              >
-                <Quote className="h-10 w-10 text-primary" />
-                <p className="font-display text-xl leading-snug sm:text-2xl">
-                  "{t.quote}"
-                </p>
-                <div>
-                  <div className="font-medium">{t.name}</div>
-                  <div className="mt-1 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                    {t.role}
-                  </div>
-                </div>
-              </div>
-            ))}
-          />
-        </div>
-      </section>
-
       {/* Contact */}
       <section
         id="contact"
