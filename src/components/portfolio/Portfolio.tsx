@@ -202,7 +202,7 @@ export default function Portfolio() {
       </section>
 
       {/* Portfolio */}
-      <section id="work" className="bg-card/30 py-24 sm:py-32">
+      <section id="work" className="bg-background py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-primary">
@@ -227,7 +227,7 @@ export default function Portfolio() {
               items={vimeoShortsIds.map((id) => (
                 <iframe
                   key={id}
-                  src={`https://player.vimeo.com/video/${id}?title=0&byline=0&portrait=0`}
+                  src={`https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`}
                   className="absolute inset-0 h-full w-full"
                   allow="autoplay; fullscreen; picture-in-picture"
                   allowFullScreen
