@@ -99,7 +99,7 @@ export default function Portfolio() {
       {/* Hero */}
       <section
         id="top"
-        className="relative overflow-hidden bg-hero-glow grain pt-32 pb-20 sm:pt-40 sm:pb-28"
+        className="relative overflow-hidden bg-hero-glow bg-grid grain pt-32 pb-20 sm:pt-40 sm:pb-28"
       >
         <div className="relative z-10 mx-auto max-w-5xl px-5 text-center sm:px-8">
           <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground backdrop-blur">
@@ -108,7 +108,7 @@ export default function Portfolio() {
           </div>
           <h1 className="font-display text-5xl leading-[1.05] sm:text-7xl md:text-8xl">
             I Turn Raw Clips Into{" "}
-            <span className="italic text-primary">Scroll-Stopping</span> Content
+            <span className="text-primary">Scroll-Stopping</span> Content
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg">
             I help content creators get more views and engagement through clean, creative
@@ -308,7 +308,7 @@ export default function Portfolio() {
         <div className="relative z-10 mx-auto max-w-3xl px-5 text-center sm:px-8">
           <p className="mb-4 text-xs uppercase tracking-[0.25em] text-primary">Let's Talk</p>
           <h2 className="font-display text-4xl leading-tight sm:text-6xl">
-            Ready to make content that <span className="italic text-primary">stops the scroll?</span>
+            Ready to make content that <span className="text-primary">stops the scroll?</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
             Whether you need edits, thumbnails, or a full content workflow — I'd love to hear
