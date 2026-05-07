@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Play, ArrowRight, Instagram, Mail, Sparkles, Film, Image as ImageIcon, Quote } from "lucide-react";
+import { Menu, X, Play, ArrowRight, Instagram, Mail, Sparkles, Film, Image as ImageIcon } from "lucide-react";
 import portrait from "@/assets/about-portrait.jpg";
 import { Slideshow } from "./Slideshow";
 import {
@@ -7,7 +7,6 @@ import {
   vimeoShortsIds,
   posterImages,
   thumbnailImages,
-  testimonials,
 } from "./data";
 
 const INSTAGRAM_URL = "https://www.instagram.com/vibe_vault_.0?igsh=ZmFkdXd1ZmNkemN3";
