@@ -15,7 +15,7 @@ const EMAIL = "statussnow22@gmail.com";
 const NAV = [
   { label: "About", href: "#about" },
   { label: "Work", href: "#work" },
-  { label: "Testimonials", href: "#testimonials" },
+  
   { label: "Contact", href: "#contact" },
 ];
 
