@@ -77,13 +77,19 @@
 }
 
 @layer utilities {
-  .font-display { font-family: var(--font-display); }
+  .font-display { font-family: var(--font-display); font-weight: 800; letter-spacing: -0.03em; }
   .bg-hero-glow { background-image: var(--gradient-hero); }
   .shadow-glow { box-shadow: var(--shadow-glow); }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, oklch(1 0 0 / 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(1 0 0 / 0.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
   .grain::before {
     content: "";
     position: absolute; inset: 0;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
-    opacity: 0.06; pointer-events: none; mix-blend-mode: overlay;
+    opacity: 0.04; pointer-events: none; mix-blend-mode: overlay;
   }
 }
