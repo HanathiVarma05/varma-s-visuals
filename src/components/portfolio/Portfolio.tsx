@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X, Play, ArrowRight, Instagram, Mail, Sparkles, Film, Image as ImageIcon, Quote } from "lucide-react";
+import { Menu, X, Play, ArrowRight, Instagram, Mail, Sparkles, Film, Image as ImageIcon } from "lucide-react";
 import portrait from "@/assets/about-portrait.jpg";
 import { Slideshow } from "./Slideshow";
 import {
@@ -7,7 +7,6 @@ import {
   vimeoShortsIds,
   posterImages,
   thumbnailImages,
-  testimonials,
 } from "./data";
 
 const INSTAGRAM_URL = "https://www.instagram.com/vibe_vault_.0?igsh=ZmFkdXd1ZmNkemN3";
@@ -16,7 +15,7 @@ const EMAIL = "statussnow22@gmail.com";
 const NAV = [
   { label: "About", href: "#about" },
   { label: "Work", href: "#work" },
-  { label: "Testimonials", href: "#testimonials" },
+  
   { label: "Contact", href: "#contact" },
 ];
 
@@ -100,7 +99,7 @@ export default function Portfolio() {
       {/* Hero */}
       <section
         id="top"
-        className="relative overflow-hidden bg-hero-glow grain pt-32 pb-20 sm:pt-40 sm:pb-28"
+        className="relative overflow-hidden bg-hero-glow bg-grid grain pt-32 pb-20 sm:pt-40 sm:pb-28"
       >
         <div className="relative z-10 mx-auto max-w-5xl px-5 text-center sm:px-8">
           <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground backdrop-blur">
@@ -109,7 +108,7 @@ export default function Portfolio() {
           </div>
           <h1 className="font-display text-5xl leading-[1.05] sm:text-7xl md:text-8xl">
             I Turn Raw Clips Into{" "}
-            <span className="italic text-primary">Scroll-Stopping</span> Content
+            <span className="text-primary">Scroll-Stopping</span> Content
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg">
             I help content creators get more views and engagement through clean, creative
@@ -301,42 +300,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section id="testimonials" className="mx-auto max-w-7xl px-5 py-24 sm:px-8 sm:py-32">
-        <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 text-xs uppercase tracking-[0.25em] text-primary">Testimonials</p>
-          <h2 className="font-display text-4xl leading-tight sm:text-5xl">
-            Trusted by creators who care about results
-          </h2>
-          <p className="mt-4 text-muted-foreground">
-            Real words from real creators I've helped grow their audience and engagement.
-          </p>
-        </div>
-        <div className="mx-auto mt-12 max-w-xl">
-          <Slideshow
-            aspect="square"
-            label="Testimonials"
-            slides={testimonials.map((t, i) => (
-              <div
-                key={i}
-                className="absolute inset-0 flex flex-col items-center justify-center gap-6 p-8 text-center sm:p-12"
-              >
-                <Quote className="h-10 w-10 text-primary" />
-                <p className="font-display text-xl leading-snug sm:text-2xl">
-                  "{t.quote}"
-                </p>
-                <div>
-                  <div className="font-medium">{t.name}</div>
-                  <div className="mt-1 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-                    {t.role}
-                  </div>
-                </div>
-              </div>
-            ))}
-          />
-        </div>
-      </section>
-
       {/* Contact */}
       <section
         id="contact"
@@ -345,7 +308,7 @@ export default function Portfolio() {
         <div className="relative z-10 mx-auto max-w-3xl px-5 text-center sm:px-8">
           <p className="mb-4 text-xs uppercase tracking-[0.25em] text-primary">Let's Talk</p>
           <h2 className="font-display text-4xl leading-tight sm:text-6xl">
-            Ready to make content that <span className="italic text-primary">stops the scroll?</span>
+            Ready to make content that <span className="text-primary">stops the scroll?</span>
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-muted-foreground">
             Whether you need edits, thumbnails, or a full content workflow — I'd love to hear
