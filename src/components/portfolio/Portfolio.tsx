@@ -106,7 +106,7 @@ export default function Portfolio() {
       {/* Hero */}
       <section
         id="top"
-        className="relative overflow-hidden bg-hero-glow bg-grid pt-40 pb-24 sm:pt-48 sm:pb-32"
+        className="relative overflow-hidden bg-hero-glow pt-40 pb-24 sm:pt-48 sm:pb-32"
       >
         <div className="relative z-10 mx-auto max-w-5xl px-5 text-center sm:px-8">
           <div className="mx-auto mb-8 inline-flex items-center gap-2 rounded-full border border-border bg-card/70 px-4 py-1.5 text-xs font-medium text-foreground backdrop-blur">
@@ -147,7 +147,7 @@ export default function Portfolio() {
           <div className="relative">
             <div className="absolute -inset-6 -z-10 rounded-[2rem] bg-primary/30 blur-3xl" />
             <div className="relative grid aspect-[5/4] place-items-center overflow-hidden rounded-3xl border border-border bg-card shadow-glow">
-              <div className="bg-grid absolute inset-0 opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
               <div className="relative flex flex-col items-center gap-4">
                 <div className="grid h-40 w-40 place-items-center rounded-full bg-primary text-primary-foreground shadow-glow">
                   <span className="font-display text-7xl">V</span>
@@ -303,7 +303,7 @@ export default function Portfolio() {
       {/* Contact */}
       <section
         id="contact"
-        className="relative overflow-hidden bg-hero-glow bg-grid py-24 sm:py-32"
+        className="relative overflow-hidden bg-hero-glow py-24 sm:py-32"
       >
         <div className="relative z-10 mx-auto max-w-3xl px-5 text-center sm:px-8">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-primary">
